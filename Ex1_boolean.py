@@ -30,7 +30,11 @@ print("-------------------------------------------\n"
 #    (wallet is strictly greater than price), and False otherwise. Print this variable.
 
 # Write your code below:
-
+wallet_balance = int(input("What is wallet price? "))
+item_price = int(input("What is item price? "))
+print(f"I can afford this item: {wallet_balance >= item_price}")
+change_available = wallet_balance > item_price
+print(f"Do i have change available?: {change_available}")
 
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
@@ -46,7 +50,10 @@ print("\n-------------------------------------------\n"
 # 4. Print a Boolean check using '!=' (not equal) to confirm they are indeed different strings.
 
 # Write your code below:
-
+username = "admin"
+input_name = "Admin"
+print(f"Are they the same?: {username == input_name} ")
+print(f"Confirm they are different: {username != input_name}")
 
 # -------------------------------------------
 # Task 3: The Bouncer (Input & Types)
@@ -63,8 +70,13 @@ print("\n-------------------------------------------\n"
 # 3. Print: "Access granted: [True/False]" using your variable.
 
 # Write your code below:
+age = int(input("How old are you? "))
+can_enter = age >= 18
+print(f"Access granted: {can_enter}")
 
 
+
+    
 # -------------------------------------------
 # SAVING YOUR WORK
 # -------------------------------------------
@@ -97,8 +109,9 @@ print("\n-------------------------------------------\n"
 # Hint: You can use: (x > 0) and (x <= 10)
 
 # Write your code below:
-
-
+number = int(input("Enter a number 1 and 10"))
+valid_number = number <= 10 and number > 0
+print(f"valid number {valid_number}")
 # Extension 2: The "Either/Or" (The 'or' Operator)
 # -------------------------------------------
 print("\n-------------------------------------------\n"
@@ -115,8 +128,9 @@ print("\n-------------------------------------------\n"
 # Correct: if colour == "Red" or colour == "Blue"
 
 # Write your code below:
-
-
+favourite_colour = input("What is your favourite colour? ").capitalize()
+colour = (favourite_colour == "Red") or (favourite_colour == "Blue")
+print(f"Your favourite colour: {colour}")
 # Extension 3: Even Number Detector (Modulus %)
 # -------------------------------------------
 print("\n-------------------------------------------\n"
@@ -131,7 +145,9 @@ print("\n-------------------------------------------\n"
 # Hint: 5 % 2 gives 1 (Odd). 4 % 2 gives 0 (Even).
 
 # Write your code below:
-
+number = int(input("Choose a number"))
+remainder = number % 2
+print(f"Remainder {remainder == 0}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
