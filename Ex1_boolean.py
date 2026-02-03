@@ -109,8 +109,9 @@ print("\n-------------------------------------------\n"
 # Hint: You can use: (x > 0) and (x <= 10)
 
 # Write your code below:
-
-
+number = int(input("Enter a number 1 and 10"))
+valid_number = number <= 10 and number > 0
+print(f"valid number {valid_number}")
 # Extension 2: The "Either/Or" (The 'or' Operator)
 # -------------------------------------------
 print("\n-------------------------------------------\n"
@@ -127,8 +128,9 @@ print("\n-------------------------------------------\n"
 # Correct: if colour == "Red" or colour == "Blue"
 
 # Write your code below:
-
-
+favourite_colour = input("What is your favourite colour? ").capitalize()
+colour = (favourite_colour == "Red") or (favourite_colour == "Blue")
+print(f"Your favourite colour: {colour}")
 # Extension 3: Even Number Detector (Modulus %)
 # -------------------------------------------
 print("\n-------------------------------------------\n"
@@ -143,7 +145,9 @@ print("\n-------------------------------------------\n"
 # Hint: 5 % 2 gives 1 (Odd). 4 % 2 gives 0 (Even).
 
 # Write your code below:
-
+number = int(input("Choose a number"))
+remainder = number % 2
+print(f"Remainder {remainder == 0}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
